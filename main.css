@@ -1,0 +1,10 @@
+.pagination li {
+	list-style: none;
+	float: left;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #e8e5e5;
+	color: #06a9ef;
+	text-align: center;
+	cursor: pointer;
+}
