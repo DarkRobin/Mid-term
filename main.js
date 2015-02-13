@@ -3,7 +3,53 @@
                 {title : 'Halo', console : 'Xbox', genre : 'Fps', format : 'DVD'},
                 {title : 'Pokemon', console : 'Gameboy', genre : 'Rpg', format : 'CART'},
                 {title : 'Dodonpachi', console : 'Saturn', genre : 'Shooter', format : 'CD'},
-                {title : 'Phantasy star online', console : 'Dreamcast', genre : 'Action', format : 'GD-ROM'}
+                {title : 'Phantasy star online', console : 'Dreamcast', genre : 'Action', format : 'GD-ROM'},
+                {title : 'Battle toads', console : 'Nes', genre : 'Action', format : 'CART'},
+                {title : 'Bubble bobble', console : 'Nes', genre : 'Action', format : 'CART'},
+                {title : 'Double dragons', console : 'Nes', genre : 'Action', format : 'CART'},
+                {title : 'Legend of zelda', console : 'Nes', genre : 'Action adventure', format : 'CART'},
+                {title : 'Super mario bros', console : 'Nes', genre : 'Action', format : 'CART'},
+                {title : 'Metroid', console : 'Nes', genre : 'Action adventure', format : 'CART'},
+                {title : 'Earthbound', console : 'Snes', genre : 'Rpg', format : 'CART'},
+                {title : 'Final fantasy 3', console : 'Snes', genre : 'Rpg', format : 'CART'}
+                // {title : 'Mega man x', console : 'Snes', genre : 'Action', format : 'CART'},
+                // {title : 'Street fighter 2', console : 'Snes', genre : 'Fighting', format : 'CART'},
+                // {title : 'Dr.mario', console : 'Nes', genre : 'Puzzle', format : 'CART'},
+                // {title : 'Super mario rpg', console : 'Snes', genre : 'Rpg', format : 'CART'},
+                // {title : 'Super r-type', console : 'Snes', genre : 'Shooter', format : 'CART'},
+                // {title : 'U.n. squdron', console : 'Snes', genre : 'Shooter', format : 'CART'},
+                // {title : 'Golden eye 007', console : 'N64', genre : 'Fps', format : 'CART'},
+                // {title : 'Majoras mask', console : 'N64', genre : 'Action adventure', format : 'CART'},
+                // {title : 'Ocarina of time', console : 'N64', genre : 'Action adventure', format : 'CART'},
+                // {title : 'Mario kart', console : 'N64', genre : 'Racing', format : 'CART'},
+                // {title : 'Star fox 64', console : 'N64', genre : 'Shooter', format : 'CART'},
+                // {title : 'Super mario 64', console : 'N64', genre : 'Action adventure', format : 'CART'},
+                // {title : 'F-zero gx', console : 'Gamecube', genre : 'Racing', format : 'CD'},
+                // {title : 'Resident evil 4', console : 'Gamecube', genre : 'Horror', format : 'CD'},
+                // {title : 'Soul calibur 2', console : 'Gamecube', genre : 'Fighting', format : 'CD'},
+                // {title : 'Mortal kombat', console : 'Genesis', genre : 'Fighting', format : 'CART'},
+                // {title : 'Sonic the hedgehog ', console : 'Genesis', genre : 'Adventure', format : 'CART'},
+                // {title : 'Streets of rage 2', console : 'Genesis', genre : 'Fighting', format : 'CART'},
+                // {title : 'Daytona usa', console : 'Saturn', genre : 'Racing', format : 'CD'},
+                // {title : 'Galatic attack', console : 'Saturn', genre : 'Shooter', format : 'CD'},
+                // {title : 'Sega rally', console : 'Saturn', genre : 'Racing', format : 'CD'},
+                // {title : 'Virtua fighter 2', console : 'Saturn', genre : 'Fighting', format : 'CD'},
+                // {title : 'Hydro thunder', console : 'Dreamcast', genre : 'Racing', format : 'CD'},
+                // {title : 'Marvel vs capcom', console : 'Dreamcast', genre : 'Fighting', format : 'CD'},
+                // {title : 'Sonic adventure', console : 'Dreamcast', genre : 'Action adventure', format : 'CD'},
+                // {title : 'Soul calibur', console : 'Dreamcast', genre : 'Fighting', format : 'CD'},
+                // {title : 'Shenmue', console : 'Dreamcast', genre : 'Adventure', format : 'CD'},
+                // {title : 'Alundra', console : 'Playstation', genre : 'Rpg', format : 'CD'},
+                // {title : 'Bushido blade', console : 'Playstation', genre : 'Fighting', format : 'CD'},
+                // {title : 'Final fantasy 7', console : 'Playstation', genre : 'Rpg', format : 'CD'},
+                // {title : 'Final fantasy tactics', console : 'Playstation', genre : 'Tactal', format : 'CD'},
+                // {title : 'Gran turismo', console : 'Playstation', genre : 'Racing', format : 'CD'},
+                // {title : 'Metal gear solid', console : 'Playstation', genre : 'Stealth', format : 'CD'},
+                // {title : 'N2o ', console : 'Playstation', genre : 'Shooter', format : 'CD'},
+                // {title : 'Silent hill', console : 'Playstation', genre : 'Horror', format : 'CD'},
+                // {title : 'Tomb raider', console : 'Playstation', genre : 'Action adventure', format : 'CD'}
+               
+
         ];
 
 
@@ -59,7 +105,7 @@ $(document).on('ready', function(){
             "</tr>"
             ].join("");
 
-        $table.append(info);                   //pushes var info to the table
+        $table.prepend(info);                   //pushes var info to the table
     }
 
    
@@ -274,8 +320,8 @@ $(document).on('ready', function(){
 		var horror = _.filter(pluked, function(horror){
 				return horror === "Horror";
 			});
-		var stelth = _.filter(pluked, function(stelth){
-				return stelth === "Stelth";
+		var stealth = _.filter(pluked, function(stealth){
+				return stealth === "Stealth";
 			});
 		var mmo = _.filter(pluked, function(mmo){
 				return mmo === "Mmo";
@@ -287,8 +333,14 @@ $(document).on('ready', function(){
 				return tactal === "Tactal";
 			});
 		var arcade = _.filter(pluked, function(arcade){
-				return arcade === "arcade";
+				return arcade === "Arcade";
 			});
+        var fighting = _.filter(pluked, function(fighting){
+                return fighting === "Fighting";
+            });
+        var puzzle = _.filter(pluked, function(puzzle){
+                return puzzle === "Puzzle";
+            });
 
 
 	    Morris.Donut({
@@ -303,11 +355,13 @@ $(document).on('ready', function(){
 			    {label: "Action/Adventure", value: actionAdventure.length},
 			    {label: "Sports", value: sports.length},
 			    {label: "Horror", value: horror.length},
-			    {label: "Stelth", value: stelth.length},
+			    {label: "Stealth", value: stealth.length},
 			    {label: "MMO", value: mmo.length},
 			    {label: "Shooter", value: shooter.length},
 			    {label: "Tactal", value: tactal.length},
-			    {label: "Arcade", value: arcade.length}   
+			    {label: "Arcade", value: arcade.length},
+                {label: "Fighting", value: fighting.length},
+                {label: "Puzzle", value: puzzle.length}   
 	  		]
   		})
     });
@@ -316,8 +370,17 @@ $(document).on('ready', function(){
     $('.search').on('click', function(e){
     	e.preventDefault;
 
-    	var searchValue = $('.searchbox').val();
-    	console.log(searchValue);
+    	var searchValue = $('.searchbox').val().charAt(0).toUpperCase() + $('.searchbox').val().substring(1);
+        var titlePluck = _.pluck(gameLibary, 'title');
+        $('.searchbox').val('');
+        if( _.contains(titlePluck, searchValue)){
+            alert("Good news " + searchValue + " is in your collection.");
+        } 
+        else{
+            alert("Sorry " + searchValue + " is NOT in you collection.\nOr you spelled it wrong");
+            console.log("its not here");
+        }
+    	
 
     });
 

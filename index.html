@@ -7,63 +7,64 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script type="text/javascript" src=""></script>
 </head>
-<body>
-		<input type="text" class="searchbox" placeholder="Search for game">
-		<button class="search">Search</button>
-
-	<nav><!--  s Navagation keep fixed need to set to tabs-->
-        <ul>
-            <li>Home</li>
-            <li>News</li>
-            <li>Cataloge</li>
-            <li>My Libary</li>
-            <li>About Us</li>
-        </ul>
-	</nav>
-	<header>
-        <!-- Place background image for page header -->
-	</header>
-	<div>
-        <button class="show-fourm">Add Game</button> <!-- button to display form to add game -->
-	</div>
-	<form>  <!-- form for adding games to libary -->
-        Title: <input type="text" placeholder="Game Title" class="game-title">
-        Console: <input type="text" placeholder="Console" class="console">
-        Genre: <input type="text" placeholder="Genre" class="genre">
-        Format: <input type="text" placeholder="Format ie Cart/CD/DVD..." class="format">
-        <button class="submit">Add to library</button>
-	</form>
-
-
-
-
-	<div class="content">
-        <table class="table game-info">
-            <thead>
-                <tr> 
-                	<th>Title <img src="up.png" class="sortA-Z-title"> <img src="down.png" class="sortZ-A-title"></th>
-                	<th>Console <img src="up.png" class="sortA-Z-console"> <img src="down.png" class="sortZ-A-console"></th>
-                	<th>Genre <img src="up.png" class="sortA-Z-genre"> <img src="down.png" class="sortZ-A-genre"></th>
-                	<th>Format <img src="up.png" class="sortA-Z-format"> <img src="down.png" class="sortZ-A-format"></th>
-                </tr>
-
-            </thead>
-            <tbody class="gameInfo">
-            	
-            </tbody>
-        </table>
-        <div class="pagination">
+<body class="background">
+  
+    <div class="container content">
+    	
+    <div class="row green">
         	
+                <ul class="nav nav-pills ">
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Cataloge</li>
+                    <li>My Libary</li>
+                    <li class="postion-right">About Us</li>
+                    <li><input type="text" class="searchbox" placeholder="Search for game"></li>
+                    <li><button class="search">Search</button></li>
+                </ul>
+        	
+    </div>
+    	
+    	
+    	<form class="formstyle">  <!-- form for adding games to libary -->
+            Title: <input type="text" placeholder="Game Title" class="game-title">
+            Console: <input type="text" placeholder="Console" class="console">
+            Genre: <input type="text" placeholder="Genre" class="genre">
+            Format: <input type="text" placeholder="Format ie Cart/CD/DVD..." class="format">
+            <button class="submit">Add to library</button>
+    	</form>
+       <img src="mario.png" class="pacman">
+
+
+
+
+    	<div class="content">
+            <table class="table game-info">
+                <thead>
+                    <tr> 
+                    	<th>Title <img src="up.png" class="sortA-Z-title"> <img src="down.png" class="sortZ-A-title"></th>
+                    	<th>Console <img src="up.png" class="sortA-Z-console"> <img src="down.png" class="sortZ-A-console"></th>
+                    	<th>Genre <img src="up.png" class="sortA-Z-genre"> <img src="down.png" class="sortZ-A-genre"></th>
+                    	<th>Format <img src="up.png" class="sortA-Z-format"> <img src="down.png" class="sortZ-A-format"></th>
+                    </tr>
+
+                </thead>
+                <tbody class="gameInfo">
+                	
+                </tbody>
+            </table>
+            <div class="pagination">
+            	
+            </div>
         </div>
+
+
+    	<div class="pie">
+          <div id="pie-chart"></div>
+        </div>
+
+        <button class="pie-refresh">Click Me!!!</button>
     </div>
-
-
-	<div class="pie">
-      <div id="pie-chart"></div>
-    </div>
-
-    <button class="pie-refresh">Click Me!!!</button>
-
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="main.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
